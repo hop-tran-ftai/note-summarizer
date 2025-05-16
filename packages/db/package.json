@@ -1,0 +1,29 @@
+{
+  "name": "@workspace/db",
+  "version": "0.0.1",
+  "description": "Database with Prisma",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "prisma generate",
+    "format": "prisma format",
+    "migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "prisma": "^6.5.0",
+    "supertest": "^7.0.0"
+  }
+}
